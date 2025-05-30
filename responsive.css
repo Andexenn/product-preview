@@ -1,5 +1,70 @@
 /** mobile */
 @media (max-width: 375px) {
-    
-}
+  body {
+    height: auto; /* tránh cố định chiều cao */
+    padding: 20px 10px;
+  }
 
+  .container {
+    flex-direction: column; /* xếp dọc */
+    width: 100%;
+    max-width: 375px;
+    max-height: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .left-content,
+  .right-content {
+    width: 100%;
+  }
+
+  .left-content img {
+    border-radius: 15px 15px 0 0; /* bo tròn 2 góc trên */
+    height: auto;
+    max-height: 250px;
+    object-fit: cover;
+    display: block;
+  }
+
+  .right-content {
+    padding: 20px 15px;
+  }
+
+  .top {
+    margin-top: 10px;
+    letter-spacing: 4px;
+    font-size: 10px;
+  }
+
+  .title {
+    font-size: 28px;
+    margin-top: 10px;
+  }
+
+  .desc {
+    margin-top: 15px;
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  .price {
+    margin-top: 25px;
+    gap: 15px;
+  }
+
+  .new_price {
+    font-size: 28px;
+  }
+
+  .btn {
+    margin-top: 25px;
+    padding: 15px;
+    border-radius: 12px;
+    font-size: 14px;
+  }
+
+  .btn span {
+    font-weight: 600;
+  }
+}
